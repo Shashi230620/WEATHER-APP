@@ -1,0 +1,326 @@
+*{
+    margin: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    width:100%;
+    min-height:100%;
+    background-color: black;
+   
+}
+.WeatherApp{
+    width:100vw;
+    height:100vh;
+    background-image: url("https://wallpapercave.com/dwp1x/wp13616465.jpg");
+    /* background-color: brown; */
+    background-size: cover;
+    position: fixed;
+    overflow: scroll;
+   
+}
+.SearchFiled{
+    width:100%;
+    height:10vmin;
+    /* background-color: yellow; */
+    text-align: center;
+    padding-top: 1.5%;
+}
+input{
+    width:20%;
+    height: 90%;
+    border-radius: 10px;
+    text-align: center;
+    border: none;
+    z-index: -1;
+    font-size: 2vmin;
+}
+
+
+.AllDetails{
+    width:85%;
+    height: 95vmin;
+    position: relative;
+    margin-left: 8%;
+    /* margin-top: 2%; */
+    /* background-color: aquamarine; */
+     overflow: hidden;
+    border-radius: 30px;
+    opacity: 1;
+    
+}
+.PlaceName-Date{
+    width:100%;
+    height:10vmin;
+    /* background-color: blueviolet; */
+    padding-left: 2%;
+    padding-top: 0.5%;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2vmin;
+    border-radius: 30px 30px 0px 0px;
+    color:white
+}
+#p1{
+    font-size: 2vmin;
+}
+.Todays-Weather{
+    width:100%;
+    min-height:40vmin;
+    display: flex;
+    /* background-color: yellow; */
+}
+.current_Temp{
+    width:50%;
+    height:100%;
+    display: flex;
+    /* background-color: red; */
+}
+.current_Details{
+    width:50%;
+    height:43vmin;
+    padding-top: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: blue; */
+    border-left: 3px solid white;
+    gap: 10%;
+    row-gap: 1%;
+
+}
+.div2{
+    width:20%;
+    height:50%;
+    /* background-color: chartreuse; */
+    padding-top: 5%;
+    padding-left: 5%;
+    font-size: 1.4rem;
+    /* font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal; */
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color:white
+}
+.image{
+    width:50%;
+    height: 100%;
+    /* background-color: aqua; */
+}
+#img1{
+    width: 100%;
+    height: 100%;
+}
+.Temp{
+    width:50%;
+    height: 100%;
+    padding-top: 10%;
+    padding-left: 2%;
+    color:white;
+    /* background-color: burlywood; */
+  
+  
+}
+#h1{
+    font-size: 12vmin;
+    /* font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal; */
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+#p{
+    font-size: 3vmin;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    padding-left: 10%;
+}
+.heading{
+    width:100%;
+    height:10vmin;
+    padding-left: 1.6%;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5vmin;
+    /* background-color: blue; */
+    color:white;
+}
+.Changing-Weather{
+    width: 100%;
+    height:30vmin;
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: green; */
+    position:absolute;
+    gap: 4%;
+    text-align: center;
+   
+}
+
+.div3{
+    position: relative;
+    width:10%;
+    height:80%;
+    border-radius: 10px 10px 10px 10px;
+    margin-top: 2%;
+    margin-left: 2%;
+    background-color:white;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    
+}
+.Cards_Heading{
+width:100%;
+height: 12%;
+
+overflow: hidden;
+}
+.Cards_image{
+
+width: 100%;
+height:60%;
+}
+#img2{
+    padding-top: 5%;
+    height: 100%;
+}
+.Cards_Para{
+
+width: 100%;
+height:6vmin;
+}
+#p3{
+    padding-top: 10%;
+    font-size: 3vmin;
+}
+img{
+    width:100%;
+    height:57%;
+}
+h4{
+    overflow: hidden;
+    font-size: 4vmin;
+}
+#p2{
+    font-size: 3vmin;
+}
+#h4{
+    font-size: 2.4vmin;
+}
+
+/*responsive Css */
+
+@media screen and (max-width:660px){
+ .WeatherApp{
+    overflow: scroll;
+ }
+    .SearchFiled{
+        width: 100;
+        height:8%;
+        /* background-color: chocolate; */
+    }
+    input{
+        width:50%;
+        height: 30%;
+        border-radius: 10px;
+        text-align: center;
+        border: none;
+        z-index: -1;
+        font-size: 2vmin;
+        margin-top: 5%;
+    }
+    
+    
+    .AllDetails{
+        /* background-color: green; */
+        width: 100%;
+        min-height: 90%;
+        margin-left: 0%;
+        opacity: 1;
+    }
+    .PlaceName-Date{
+        width: 100%;
+        height: 20vmin;
+        /* background-color: blueviolet; */
+        font-size: 3vmin;
+        padding-top: 5%;
+    }
+    #p1{
+        font-size: 3vmin;
+    }
+    #p{
+        font-size: 8vmin;
+        font-family: "Lato", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+    }
+    #p2{
+        font-size: 5vmin;
+        font-family: "Lato", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+    }
+    h4{
+        font-size: 8vmin;
+        font-family: "Lato", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        color:red;
+    }
+    #h1{
+        color:red;
+    }
+    .Todays-Weather{
+        width: 100%;
+        min-height: 40vmin;
+        /* background-color:wheat; */
+        display: flex;
+        flex-direction: column;
+    }
+    .current_Temp{
+        width: 100%;
+        height:50vmin;
+        /* background-color: steelblue; */
+    }
+    .Temp{
+        margin-top: 5%;
+}
+.current_Details{
+    width: 100%;
+    height:60vmin;
+    /* background-color: sienna; */
+    font-size: 8vmin;
+    padding-left: 5%;
+}
+.heading{
+    width:100%;
+    height:20vmin;
+    /* background-color: yellow; */
+}
+h2{
+    font-size: 6vmin;
+    padding-top: 5%;
+}
+.div3{
+    width: 40%;
+    height:36vmin;
+    /* background-color: aqua; */
+    margin-left: 5%;
+    border-radius: 10px;
+    opacity: 0.4;
+}
+#h4{
+    font-size: 5vmin;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+}
