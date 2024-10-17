@@ -16,7 +16,7 @@ body{
     /* background-color: brown; */
     background-size: cover;
     position: fixed;
-    overflow: scroll;
+    overflow: auto;
    
 }
 .SearchFiled{
@@ -218,17 +218,21 @@ h4{
 
 /*responsive Css */
 
-@media screen and (max-width:660px){
- .WeatherApp{
-    overflow: scroll;
- }
-    .SearchFiled{
-        width: 100;
-        height:8%;
-        /* background-color: chocolate; */
+@media screen and (max-width: 660px) {
+    .WeatherApp {
+        width: 100vw;
+        height: 100vh;
+        background-color: red;
+        overflow: auto;
     }
-    input{
-        width:50%;
+
+    .SearchFiled {
+        width: 100;
+        height: 14%;
+    }
+
+    input {
+        width: 50%;
         height: 30%;
         border-radius: 10px;
         text-align: center;
@@ -237,90 +241,107 @@ h4{
         font-size: 2vmin;
         margin-top: 5%;
     }
-    
-    
-    .AllDetails{
-        /* background-color: green; */
+
+    .AllDetails {
         width: 100%;
         min-height: 90%;
         margin-left: 0%;
-        opacity: 1;
+        opacity: 1; /* Set full opacity */
+        overflow: auto;
     }
-    .PlaceName-Date{
+
+    .PlaceName-Date {
         width: 100%;
         height: 20vmin;
-        /* background-color: blueviolet; */
         font-size: 3vmin;
         padding-top: 5%;
+        opacity: 1; /* Set full opacity */
     }
-    #p1{
+
+    #p1 {
         font-size: 3vmin;
     }
-    #p{
+
+    #p {
         font-size: 8vmin;
         font-family: "Lato", sans-serif;
         font-weight: 100;
         font-style: normal;
+        opacity: 1; /* Set full opacity */
     }
-    #p2{
+
+    #p2 {
         font-size: 5vmin;
         font-family: "Lato", sans-serif;
         font-weight: 100;
         font-style: normal;
+        opacity: 1; /* Set full opacity */
     }
-    h4{
+
+    h4 {
         font-size: 8vmin;
         font-family: "Lato", sans-serif;
         font-weight: 100;
         font-style: normal;
-        color:red;
+        color: red;
+        opacity: 1; /* Set full opacity */
     }
-    #h1{
-        color:red;
+
+    #h1 {
+        color: red;
+        opacity: 1; /* Set full opacity */
     }
-    .Todays-Weather{
+
+    .Todays-Weather {
         width: 100%;
         min-height: 40vmin;
-        /* background-color:wheat; */
         display: flex;
         flex-direction: column;
     }
-    .current_Temp{
+
+    .current_Temp {
         width: 100%;
-        height:50vmin;
-        /* background-color: steelblue; */
+        height: 50vmin;
     }
-    .Temp{
+
+    .Temp {
         margin-top: 5%;
-}
-.current_Details{
-    width: 100%;
-    height:60vmin;
-    /* background-color: sienna; */
-    font-size: 8vmin;
-    padding-left: 5%;
-}
-.heading{
-    width:100%;
-    height:20vmin;
-    /* background-color: yellow; */
-}
-h2{
-    font-size: 6vmin;
-    padding-top: 5%;
-}
-.div3{
-    width: 40%;
-    height:36vmin;
-    /* background-color: aqua; */
-    margin-left: 5%;
-    border-radius: 10px;
-    opacity: 0.4;
-}
-#h4{
-    font-size: 5vmin;
-    font-family: "Lato", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
+    }
+
+    .current_Details {
+        width: 90%;
+        height: 60vmin;
+        font-size: 8vmin;
+        padding-left: 5%;
+        border: none;
+        border-top: 5px solid white;
+        margin-left: 3%;
+        opacity: 1; /* Set full opacity */
+    }
+
+    .heading {
+        width: 100%;
+        height: 20vmin;
+    }
+
+    h2 {
+        font-size: 6vmin;
+        padding-top: 5%;
+    }
+
+    .div3 {
+        width: 40%;
+        height: 36vmin;
+        margin-left: 5%;
+        border-radius: 10px;
+        opacity: 0.8; /* Adjusted opacity */
+    }
+
+    #h4 {
+        font-size: 5vmin;
+        font-family: "Lato", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        opacity: 1; /* Set full opacity */
+    }
 }
