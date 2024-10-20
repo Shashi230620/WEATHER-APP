@@ -42,13 +42,35 @@ function updateWeatherElements(data) {
     elements.lowertemp.textContent = `${current.dewpoint_c}`;
     elements.rainper.textContent = `${current.precip_in}`;
     elements.sunsettime.textContent = `${current.cloud}`;
-    elements.image.src = `${current.condition.icon}`;
+
+
+    if(elements.tempstatus.textContent==="Sunny"){
+        elements.image.src = "https://cdn.pixabay.com/animation/2024/08/17/11/53/11-53-24-721_512.gif";
+    }
+    // else if(elements.tempstatus.textContent==="Mist"){
+    //     elements.image.src = "https://image.pngaaa.com/321/1201321-small.png";
+    // }
+    else if(elements.tempstatus.textContent==="Partly cloudy"){
+        elements.image.src = "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExeWFsNWhmbmVkampkd3cwM2cyaDU4Zmw2ejJpc3dpcG5nMWtnY3RjcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/KjPxU28MvMnlqULF31/giphy.webp";
+    }
+    else{
+        elements.image.src = `${current.condition.icon}`;
+    }
 
     for (let i = 0; i <= 6; i++) {
+        console.log(`${forecast.forecastday[0].hour[i].condition.text}`);
         elements.h4[i].textContent = `${forecast.forecastday[0].hour[i].condition.text}`;
-        elements.image2[i].src = `${forecast.forecastday[0].hour[i].condition.icon}`;
+        if(elements.h4[i].textContent==="Patchy rain nearby"){
+            console.log("Changing image for partly cloudy");
+            elements.image2[i].src = "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExeWFsNWhmbmVkampkd3cwM2cyaDU4Zmw2ejJpc3dpcG5nMWtnY3RjcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/KjPxU28MvMnlqULF31/giphy.webp"
+        }
+        else{
+            elements.image2[i].src = `${forecast.forecastday[0].hour[i].condition.icon}`;
+        }
         elements.p[i].textContent = `${forecast.forecastday[0].hour[i].temp_c}ºC`;
     }
+
+
 }
 
 function fetchWeatherDataByGeolocation() {
